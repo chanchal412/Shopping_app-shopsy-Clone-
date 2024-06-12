@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Account</title>
+  <style type="text/css">
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .top-section {
+      width: 100%;
+      background-color: #d69674;
+      color: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+      font-weight: bolder;
+    }
+
+    .account-heading {
+      font-size: 25px;
+      margin-bottom: 15px;
+      margin-top: 10px;
+      color: black;
+      margin-left: 15px;
+    }
+    .div1{
+      width: 100%;
+      height:120px;
+      display: flex;
+
+    }
+
+     .profile{    
+      margin-left: 20px;
+    }
+
+    .button{
+  display: flex;
+}
+
+    .loginbtn{
+   background-color:black ;
+   border-radius: 10px;
+   border: none;
+   height: 50px;
+   width:300px;
+   color: white;
+   font-size: 20px;
+   font-family: arial black;
+   margin-top: 35px;
+   cursor: pointer;
+   transition-duration: 1s;
+   margin-left: 100px;
+}
+
+.loginbtn1{
+   background-color:black ;
+   border-radius: 10px;
+   border: none;
+   height: 50px;
+   width:300px;
+   color: white;
+   font-size: 20px;
+   margin-top: 35px;
+   font-family: arial black;
+   
+   cursor: pointer;
+   transition-duration: 1s;
+   margin-left: 80px;
+   padding-left: 0px;
+}
+.loginbtn:hover{
+   transform: scale(0.9);
+   background-color: #6b4745;
+   color: whitesmoke;
+   box-shadow: 0px 0px 10px white;
+   border: 3px solid white;
+}
+.loginbtn1:hover{
+   transform: scale(0.9);
+   background-color: #6b4745;
+   color: whitesmoke;
+   box-shadow: 0px 0px 10px white;
+   border: 3px solid white;
+}
+
+.main-container{
+    display: flex;
+    }
+
+    .navbar {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+      height: 200vh;
+      display: flex;
+      flex-direction: column;
+      width: 15%;
+      font-size: 20px;
+    }
+
+    .navbar a {
+      color: #fff;
+      text-decoration:none;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #555;
+    }
+
+    .content-container {
+      flex: 1;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .content div {
+      display: none;
+    }
+
+    .content div:target {
+      display: block;
+    }
+    .FAQ a{
+      color: black;
+      font-size: 20px;
+      text-decoration: none;
+      padding: 20px;
+      list-style-type: none;
+      margin-bottom: 50px;
+
+    }
+    .FAQ{
+      list-style-type: none;
+    }
+    .FAQ li{
+      padding: 15px;
+    }
+
+    .btn{
+  margin-top: 30px;
+  background-color: gray;
+  font-weight: bolder;
+  font-family: sans-serif;
+  color: white;
+  border: 3px solid #d69674;
+  border-radius: 5px;
+  width: 15%;
+  height: 50px;
+  margin-left: 40%;
+  font-size: 25px;
+}
+.btn a{
+    text-decoration: none;
+}
+h2{
+  margin-left: 30%;
+  margin-top: 5%;
+}
+input{
+   width: 500px;
+   margin-top: 20px;
+   height: 30px;
+   font-size: 20px;
+   font-weight:bold;
+   padding-left: 20px;
+   justify-content: center;
+}
+input[type="submit"]
+{
+    height: 60px;
+    background-color: #151fd6;
+    border-radius: 20px;
+    border: none;
+
+}
+input{
+   width: 50%;
+   height: 30px;
+   margin-top: 30px;
+   border-radius: none;
+   outline: none;
+   font-size: 20px;
+   color: black;
+   background-color: transparent;
+   border-bottom: 2px solid black;
+   text-align: center;
+   border: none;
+   border-bottom: 1px solid black;
+   margin-left: 20%;
+}
+
+.Editbtn{
+   background-color:#d69674 ;
+   border-radius: 10px;
+   border: none;
+   height: 50px;
+   width:40%;
+   color: white;
+   font-size: 20px;
+   font-family: arial black;
+   margin-top: 30px;
+   cursor: pointer;
+   transition-duration: 1s;
+   margin-left: 25%;
+}
+.Editbtn:hover{
+   transform: scale(0.9);
+   background-color: #6b4745;
+   color: whitesmoke;
+   box-shadow: 0px 0px 10px white;
+   border: 3px solid white;
+}
+.searchInput[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            margin-left: 3%;
+            border-radius: 250px;
+          
+            width: 500px;
+            border: 1 px solid black;
+            height: 30px;
+            
+        }
+.btn1
+{
+  margin-top: 30px;
+  background-color: gray;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: white;
+  border: 3px solid #d69674;
+  border-radius: 5px;
+  width: 20%;
+  height: 50px;
+  margin-left: 37%;
+  font-size: 25px;
+}
+.btn1 a{
+    text-decoration: none;
+}
+}
+
+
+
+    
+  </style>
+</head>
+<body>
+  <div class="top-section">
+    <div class="account-heading"><h3>My Account</h3></div>
+      <div class="div1">
+    <img src="https://www.freeiconspng.com/thumbs/profile-icon-png/am-a-19-year-old-multimedia-artist-student-from-manila--21.png" height="130px" class="profile">
+
+    <div class="button">  
+               <a href="FLogin.html"><input type="button" name="Login" value="Sign In" class="loginbtn"></a>
+               <a href="Signup.html"><input type="button" name="SignUp" value="Join" class="loginbtn1"></a>
+        </div>  
+  </div>
+</div>
+
+  <div class="main-container">
+    <div class="navbar">
+      <a href="#Customer Care">Customer Care</a>
+      <a href="#Orders">Orders</a>
+      <a href="#Edit Profile">Edit Profile</a>
+      <a href="#Saved Addresses">Saved Addresses</a>
+      <a href="#Shopsy Wallets">Shopsy Wallets</a>
+      <a href="#Terms & Conditions">Terms & Conditions</a>
+      <a href="#Returns & Refunds Policy">Returns & Refunds Policy</a>
+      <a href="#We Respect Your privacy">We Respect Your privacy</a>
+                        <a href="#Fees & Payments">Fees & Payments</a>
+    </div>
+
+    <div class="content-container">
+      <div class="content">
+        <div id="Customer Care">
+          <h1>FAQ</h1><br>
+          <input type="text" class="searchInput" placeholder="     Search..." style="width:500px;height: 30px; border-radius: 250px;">
+          <br><br>
+            <ul class="FAQ">
+                <li><a href="#">Shipping FAQs</a></li>
+                 <li><a href="#">Cancellation FAQs</a></li>
+                 <li><a href="#">Payment FAQs</a></li>
+                 <li><a href="#">Returns FAQs</a></li>
+                  <li><a href="#">Rewards</a></li>
+                  <li><a href="#">Gift Cards</a></li>                
+              </ul>
+        </div>
+        <div id="Orders">
+          <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/32430/box-clipart-md.png" width="30%" style="margin-top:10%; margin-left:30%;">
+          <h2>You have not placed any order yet!</h2>
+          <button type="button" class="btn"><a href="Explore.html" style="color: black;" style="text-decoration:none;">Shop Now</a></button>
+        </div>
+        <div id="Edit Profile">
+          
+          <p>
+             <input type="text" name="password" placeholder=" First Name" id="pass" required>
+            <input type="text" name="password" placeholder="Last Name" id="pass" required>
+            <input type="email" name="email" placeholder="Email ID" id="email" required>
+            <input type="PhoneNo" name="PhoneNo" placeholder="Mobile Number" id="Number" required>
+           
+            <br>
+            <br>
+             <a href="#"><input type="button" name="Submit" value="SUBMIT" class="Editbtn"></a>
+
+          </p>
+        </div>
+        <div id="Saved Addresses">
+          <a href="address" style="text-decoration: none;"><h3 style="margin-top:30px;margin-left: 10%;">+ Add a New Address </a>
+            <br>
+            <br>
+            
+             <input type="email" name="email" placeholder="Full Name" id="email" required style="margin-top:30px;margin-left: 20%;">
+               <input type="PhoneNo" name="PhoneNo" placeholder="Phone Number" id="Number" required style="margin-top:30px;margin-left: 20%;">
+                <input type="text" name="password" placeholder="PinCode" id="pass" required style="margin-top:30px;margin-left: 20%;">
+                 <input type="text" name="password" placeholder="State" id="pass" required style="margin-top:30px;margin-left: 20%;">
+                 <input type="text" name="password" placeholder="City" id="pass" required style="margin-top:30px;margin-left: 20%;">
+                 <input type="text" name="password" placeholder="House No" id="pass" required style="margin-top:30px;margin-left: 20%;">
+                 <br>
+                 <br>
+                 <button type="button" class="btn1"><a href="Explore.html" style="color: black;" style="text-decoration:none;">Save Address</a></button>
+                 </div>
+                   <div id="Shopsy Wallets">
+                  <h3 style="margin-left: 5%;margin-top: 30px;">Shopsy Cash</h3>
+                  <br>
+                  <p style="margin-left: 5%;margin-top: 30px; font-size:20px">Earned from return of Shopsy orders when paid using cash at the time of delivery.</p>
+                  <br>
+                  <br>
+                  <h3 style="margin-left: 5%;margin-top: 30px;">Shopsy Points</h3>
+                  <br>
+                  <p style="margin-left: 5%;margin-top: 30px; font-size:20px">Earned from promotions & offers at Shopsy with limited validity. Use upto 100%* on every purchase.</p>
+                  <br><br>
+                  <h3 style="margin-left: 5%;margin-top: 30px;">Have a Gift Card?</h3>
+                  <br>
+                  <p style="margin-left: 5%;margin-top: 30px; font-size:20px">Add to Shopsy Wallet to pay for your orders</p>
+
+
+                  </div>
+
+                  <div id="Terms & Conditions"><h3>Welcome to Shpsy and Shopsy Luxe!</h3><br>
+                    <p style="line-height: 1.5;text-align: justify;  margin: 10px; padding: 5px;text-indent: 20px;">
+
+                      PART A – TERMS AND CONDITIONS FOR USAGE OF THE PLATFORMS
+                      <br><br>1. GENERAL
+                      1.1 The terms and conditions for usage of the Platforms as set out herein (“Terms of Use”) specifically govern your access and use of the Platforms, which provides a forum for you to inter alia discover, select and buy Products listed on the Platforms at the indicated price at any time, from the locations serviceable by us.
+                      <br><br>
+                      2.REGISTRATION OF YOUR ACCOUNT<br><br>2.1 In order to purchase Products on the Platforms and/or avail Services thereof, you will have to register on the Platform. Registration is a one-time process and is free of cost.<br>2.1.1 You may register on Shposy in one of the following ways:<br>a. Creating an Shopsy account: by providing the relevant information for the creation of your account on AJIO and after filling in the necessary forms and providing the necessary details as may be required by us at the time of your registration. Following this, an account will be created by Reliance for you.<br>b. Using a third-party account:you may use the login credentials of the account maintained by you with a Reliance-integrated third-party (illustratively, Google or Facebook), in which case you will also be subject to the relevant third-party terms and conditions applicable to such account.<br>2.1.2 You may register on Shopsy Luxe on successful mobile OTP (One Time Password) verification and you will be eligible to further access and avail the Services after filling in the necessary forms and after providing the necessary details as may be required by us at the time of your registration. For placing an order, you should login to your account by completing the successful mobile OTP verification.<br>2.2 You are solely authorized to operate the account created by you. Consequently, it is your responsibility to maintain the confidentiality of the log in credentials of your account on the Platforms and for restricting access to your computer/mobile/other similar devices to prevent unauthorized access to your account. You shall remain solely liable for all the actions undertaken through your account.<br>2.3 You will:<br>(a) immediately inform us of any unauthorized use of the account or any other security breach; and <br>(b) ensure that you log out of your account at the end of each session. We, our employees, agents, directors and officers will not be liable for any loss or direct or indirect damage arising from your failure to comply with these Terms of Use. You may be held liable for any losses incurred to us or any other user due to unauthorized use of their account by you. We reserve the right to refuse access to the Platform(s), terminate accounts, remove or edit content at any time without notice to you.<br><br>3. COMMUNICATION AND UNSUBSCRIPTION<br><br>3.1 By accepting the Terms of Use, you also accept to receive news, updates, offers/ campaign related SMS, to the mobile phone number provided by you. By accessing and using the Platforms and/or verifying your contact number with us, you explicitly consent to receive such communications (through call, SMS, email or other digital and electronic means) from us and/or our authorized representatives regarding any new services or offerings, even if your contact number is registered under the DND/NCPR list under the Telecom Commercial Communications Customer Preference Regulations, 2018.<br>3.2 You can unsubscribe/ opt-out from receiving marketing/ promotional communications, newsletters and other notifications from us at any time by following the instructions set out in such communications.<br><br>4. ACCESS TO IMAGES<br>4.1 By accepting the Terms, you provide explicit consent to us, to have access to your camera and gallery applications installed in your phone or computer, through which you are using the Platforms, for the purpose of enabling us to provide Services.
+                    </p>
+
+                  </div>
+
+                   <div id="Returns & Refunds Policy">
+                    <h3>TERMS FOR CANCELLATION, RETURN AND REFUND OF ORDERS</h3>
+                    <p style="line-height: 1.5;text-align: justify;  margin: 10px; padding: 5px;text-indent: 20px;">
+
+                      1. Cancellation of Products:<br><br>You can cancel orders for Products partially or fully prior to the orders of Products being packed and invoice generated in relation thereof.Upon successfully placing an order for Products on the Platforms and after Reliance has successfully handed over the Product(s) to its Logistic Partner, in case you change your mind in relation to a particular order of the Products (including instances of tampered/torn/opened Product packages at the time of delivery of Product), you may reject the shipment of such order of Products when our Logistic Partner attempts the delivery the order of Products at your address. For any help that you may need you can always reach out to us at customercare@ajio.com or via Contact Us section on the Platforms.On receipt of the cancellation request prior to Products being packed and invoice being generated we shall cancel the order of Products and initiate the refund for the Products within 10 (ten) business days from the receipt of the cancellation request from you. The amount shall be refunded to you through the same mode of payment used by you for the purchase or via credit to your AJIO Wallet account that can be used for subsequent purchases of Products on the Platforms. All refunds, except for refund to the AJIO Wallet account, shall be subject to applicable policies and charges of the User’s bank/financial institution/ payment gateway, as may be applicable.The User is not allowed to cancel the order for Products after the Products have been packed and invoice has been generated in relation thereof. If any User sends an email to us requesting for cancellation of the order for Products after the Products have been packed and invoice has been generated in relation thereof, we cannot guarantee such order cancellation in case the Product is already packed and invoiced by the time we check and respond to User’s email. In such cases, the User may choose to refuse to accept the delivery of the order of Products when our Logistic Partner attempts the delivery the order of Products at User’s address and let unwanted order of Products be returned to us by our Logistic Partner. If at the time of delivery of order of Products by our Logistic Partner the User notices or is aware that the Product package is either tampered and/or torn and/or open then the User must may reject the shipment of such order of Products when our Logistic Partner attempts the delivery the order of Products at the User’s address and intimate the concern by emailing us at customercare@ajio.com or contacting us via Contact Us section on the Platforms.<br><br>2. Return of Products:<br><br>Subject to the category-wise terms as set forth under Annexure A to this Policy, you may initiate the request for return of the Product if: (i) Product is damaged; (b) both the Product and shipping package have been damaged; (iii) Product is defective or is not in working condition; (iv) the Product is of bad quality; (v) parts of the Product or accessory is missing; (vi) the Product ordered is different from what was ordered basis the Product description provided on the Platforms; or (vii) you are dissatisfied with the quality of purchased Product due to size issue, fit issue, colour issue, manufacturing defects, shrinkage in fabric, colour bleeding (each referred to as “Non-Compliant Product”). For Shopsy and Shopsy Luxe, you shall initiate such requests for return of Products in accordance with the terms set forth under Annexure A to this Policy (“Return Period”);While raising a request for return on the Platforms, the User shall have the option to seek a refund of the monies paid by him/her towards the purchase of the Product. The User will be required to produce a copy of the original invoice at the time of placing a request for return of Products. The User shall ensure that the Products being returned comply with the conditions set out under this Policy and are, among other conditions, unused, unwashed, with price tags intact, all packaging material undamaged and unused. Such returned Product(s) should not carry stains, sweat, detergent, or body odour.You shall keep the Products in its unused, original condition, along with the original invoice/ sale receipt, brand outer box
+                      
+                    </p>
+    
+
+                  </div>
+                  <div id="We Respect Your privacy">
+                    <h3>PRIVACY POLICY</h3>
+                    <p style="line-height: 1.5;text-align: justify;  margin: 10px; padding: 5px;text-indent: 20px;"> 
+                      <b>1. General</b><br><br>1.1 Reliance Retail Limited, having its registered office at 3rd Floor, Court House, Lokmanya Tilak Marg, Dhobi Talao, Mumbai – 400 002, Maharashtra, India (“Reliance”, “we”, “us” or “our”) is managing and operating the websites AJIO.COM (“AJIO), WWW.LUXE.AJIO.COM (“AJIO Luxe”) and the mobile application thereof (AJIO and AJIO Luxe are collectively referred to as the “Platforms”) through which it inter alia facilitates the sale and purchase of a diverse range of fashion, home, and other products listed on the Platforms from time to time and other products (“Products”) to the users of the Platforms (“User” or “Users” or “you” or “your”).  <br><br>1.2 This privacy policy (“Privacy Policy”), together with the Terms governs your use of the Platforms and describes our policies and procedures on the collection, use, disclosure, processing, transfer, and storage of the information provided to us by you. By using, browsing, accessing, or purchasing from the Platforms you agree to be bound by the terms of this Privacy Policy and consent to the collection, storage, possession, dealing, handling, sharing, disclosure or transfer of your information in accordance with the terms of the Privacy Policy. We shall not use the User’s information in any manner except as provided under this Privacy Policy. Capitalised terms used herein if not defined shall have the same meaning as ascribed to them under the Terms.<br><br>1.3 This document is an electronic record and is governed by the provisions under the Information Technology Act, 2000 and rules made thereunder as may be applicable, and the amended provisions pertaining to electronic records in various statutes as amended by the Information Technology Act, 2000. This electronic record is generated by a computer system and does not require any physical or digital signatures.<br><br>1.4 This Privacy Policy sets out the type of information collected from the Users, including the nature of the Sensitive Personal Data or Information (defined hereinafter), the purpose, means and modes of usage of such information and how and to whom we shall disclose or transfer such information. You may at any time withdraw your consent for collection and use of your information including Personal Information (defined hereinafter) or Sensitive Personal Data or Information. However, please note that if you withdraw your consent, we may no longer be able to provide you with the corresponding service for which you have withdrawn your consent. It is hereby clarified that your decision to withdraw your consent will not affect the processing of Personal Information based on your previous consent prior to the withdrawal.<br><br>1.5 Please take a moment to familiarize yourself with our Privacy Policy. If you do not agree with any provisions of the Terms or this Privacy Policy, we advise you to not use or access the Platforms.<br><br><b>2.Security</b><br><2.1  The security of your Personal Information is important to us. We have implemented security policies, rules and technical measures, as required under applicable law including firewalls, transport layer security and other physical and electronic security measures to protect the Personal Information that it has under its control from unauthorized access, improper use or disclosure, unauthorized modification and unlawful destruction or accidental loss. When you submit your information on the Platforms, your information is protected through our security systems. Please note that we use international and industry-recognized standards such as per applicable laws, rules and regulations.<br><br>2.2  Your information is contained within secured networks and is only accessible by a limited number of authorized persons who have access rights to such systems or otherwise require such information for the purposes provided in this Privacy Policy. These authorized persons are also under an obligation to keep such information confidential.<br><br>2.3  Although we make best possible efforts to transmit and store all the information provided by you in a secure operating environment that is not open to public, you understand and acknowledge that there is no such thing as complete security and we do not guarantee that there will be no unintended disclosures of any information and potential security breaches. You agree not to hold us responsible for any breach of security or for any action of any third parties that receive your Personal Information or events that are beyond our reasonable control including, acts of government, computer hacking, unauthorized access to computer data and storage device, computer crashes, technical glitches, breach of security and encryption, etc.<br><br>3. Cookies Policy
+                          <br><br>3.1  Due to the communications standards on the Internet, when you visit, access or browse the Platforms, we automatically receive the uniform resource locator of the site from which such you visit, access or browse the Platforms, details of the website you visit on leaving the Platforms, the internet protocol (“IP”) address of each User’s computer operating system, type of web browser the User is using, email patterns, and the name of the User’s internet service provider. This information is used solely to analyse overall User trends and to help us improve our services. Please note that the link between the User’s IP address and the User’s personally identifiable information is not shared with third parties without such User’s permission or except when required by law or to provide or facilitate the User with the services. Notwithstanding the above, the User acknowledges that we reserve the right to share some of the aggregate findings, including the personal information provided by the Users in an unidentifiable, aggregate form, and not the specific data with advertisers, sponsors, investors, strategic partners, and others in order to help grow the business. The amount of information sent to us depends on the settings of the web browser used by the User to access the Platforms. The User may refer to the browser used, if the User wishes to learn what information is provided to us.
+                    </p>
+                    </div>
+
+                    <div id="Fees & Payments">
+                      <h3> FEES AND PAYMENTS POLICY</h3><br><br>
+                      <p style="line-height: 1.5;text-align: justify;  margin: 10px; padding: 5px;text-indent: 20px;">
+                       <b>1.   WHO ARE WE?</b><br><br>Reliance Retail Limited, a company incorporated under the laws of India, having its registered office at 3rd Floor, Court House, Lokmanya Tilak Marg, Dhobi Talao, Mumbai – 400 002, Maharashtra, India (“Reliance”, “We”, “Us” or “Our”) is a retail company managing and operating the websites www.Shopsy.com ("Shopsy") and www.luxe.Shopsy.com ("Shopsy Luxe”) and the corresponding mobile and tablet applications thereof  (Shopsy and Shopsy Luxe are collectively referred to as the “Platforms”) through which We, inter alia, offer various retail solutions, facilitates the sale and purchase of a diverse range of online lifestyle and fashion merchandise, home, beauty, electronics and other products listed on the Platforms from time to time and other products (“Products”) to the users of the Platforms  (“User” or “Users” or “You” or “Your”). <br><br> <b>2.WHAT IS THIS FEES AND PAYMENTS POLICY?</b><br><br>2.1.This Fees and Payments Policy (“FPP Policy”), together with the Platforms Terms and Condition describes Reliance’s ¬accepted payment methods, and Reliance’s policies and procedures in relation to acceptance of fees and payments towards the services offered through the Platforms. Reliance’s primary object is to ensure that the Platforms are User friendly and equipped with reasonably expected security infrastructure to protect any financial information which may be shared by User(s).<br><br>2.2. User(s) are required to peruse and understand the terms of this FPP Policy. If You do not agree to the terms contained in this FPP Policy, You are advised not to accept the Platforms Terms and Condition and this FPP Policy and may forthwith leave and stop using the Platforms. The terms contained in this FPP Policy shall be accepted without modification and, by using, browsing, accessing, or purchasing from the Platforms, You agree to be bound by the terms contained herein and any subsequent changes, modifications, amendments made in relation thereof. <b>3.FEES AND PAYMENT OPTIONS</b><br><br>3.1.Reliance does not levy any fee for browsing the Platforms. Reliance may, in future, consider levying fees on the User(s) for using the Platforms as a whole, or for use of certain features of the Platforms. In such an event, You agree to pay any such fees, as applicable. Reliance does not covenant or guarantee providing You with a notice prior to enforcing such a levy of fees on the Platform. Your continued usage of the Platforms after such change in the fees will be considered to be your acceptance of such changes.<br><br>3.2.    In order to ensure User(s) convenience, Reliance offers multiple payment options to the User(s). Reliance without prior notice to User, reserves the right to add or delete payment options from the ones listed below:<br>3.2.1.    payment through net banking facilities;<br>3.2.2.    payment through select credit cards;<br>3.2.3.    payment through select debit cards;<br>3.2.4.    payment through AJIO Wallet;<br>3.2.5.    payments through cash on delivery;<br>3.2.6.    payments through prepaid payment instruments and electronic wallets;<br>3.2.7.    payments through equated monthly instalments (“EMI”) enabled for select debit and/or credit cards;<br>3.2.8.Any other payment option as may be provided by Reliance from time to time. <br>The payment options referred to above shall hereinafter collectively be referred to as “Payment Options”. While reasonable endeavours are made to offer the Payment Options through varied banking channels, presently, Reliance accepts payments only from major select banking avenues. Reliance does not accept payments made through international debit/credit cards.  
+                       </p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

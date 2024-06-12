@@ -1,0 +1,277 @@
+
+*{
+	margin: 0px;
+	padding: 0px;
+ box-sizing: border-box;
+}
+.divmain{
+			width: 100%;
+			height: 500px;
+			display: block;
+			margin-top: 0px;
+			padding: 0px;
+			margin-right: 80px;
+			
+
+		}
+.txt{
+	position: ;
+
+}
+.girl{
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	width: 45%;
+	height: 70%;
+	margin-top: 15%;
+	
+	
+	
+}
+.divmain1{
+			width: 100%;
+			height: 500px;
+			display: flex;
+			position: relative;
+			
+			border: 2px solid yellowgreen;
+		}
+.div1{
+	width: 100%;
+	height: 90%;
+	display: block;
+	padding: 20px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.div2{
+	width: 100%;
+	height: 90%;
+	margin: 2px;
+	display: block;
+	text-align: center;
+	display: flex;
+	padding: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 20px;
+    margin-right: 20px;
+     animation: slideShow 10s infinite;
+            object-fit: cover;
+                         margin-left: 0px;
+}
+.div3{
+	width: 100%;
+	height: 90%;
+	margin: 2px;
+	display: block;
+	padding: 20px;
+	text-align: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center;
+     margin-left: 20px;
+    margin-right: 20px;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color:whitesmoke;
+    color: black;
+    padding: 10px 0;
+    position: sticky;.
+    
+    
+}
+.h1 {
+	text-align: left;
+	padding-top: 0px;
+	text-decoration: none;
+    color: #d69674;
+    font-weight: bolder;
+    font-size: 45px;
+    transition: color 0.3s ease;
+    margin-left: 25px;
+    margin-top: 5px;
+    align-content: center;
+    font-variant: small-caps;
+    font-stretch: 125%;
+    font-family: Algerian;
+   height: 40px;
+    position: sticky;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 40px;
+   text-align: center;
+   line-height: 16px;
+   bottom: 55px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    position: sticky;
+}
+
+nav a:hover {
+    color: white;
+    text-shadow: 2px 2px 15px black; 
+}
+.div{
+	width: 100%;
+	height: 50%;
+}
+footer {
+    background-color:#d69674;
+    color: black;
+    padding: 20px 0;
+    margin-top: 2px;
+    left: 0px;
+}
+.nav{
+	font-weight: bolder;
+	font-size: 25px;
+	text-align: right;
+}
+.h1:hover{
+	color: #b83027;
+	text-shadow: 2px 2px 15px black;
+
+}
+.btn{
+	margin-top: 20px;
+	background-color: gray;
+	font-weight: bolder;
+	font-family: sans-serif;
+	color: white;
+	border: 3px solid #d69674;
+	border-radius: 5px;
+	width: 9%;
+	height: 50px;
+	margin-left: 10%;
+	font-size: 25px;
+}
+.btn a{
+    text-decoration: none;
+}
+
+.new{
+	width: 100%;
+	display: block;
+	height: 50px;
+	margin-bottom: 5px;
+	margin-left: 20px;
+	margin-top: 17px;
+	font-style: italic;
+	font-variant: small-caps;
+}
+
+.i{
+    display: flex;
+
+
+}
+.i1{
+    width: 100%;
+    height: 90%;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 0px;
+   
+}
+.i11{
+    width: 100%;
+    height: 90%;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 0px;
+    margin-top:100px ;
+   
+}
+
+ .slide{
+     
+            background-color: lightgrey;
+            width: 100%;
+            height: 70vh;
+            display: flex;
+            margin-top: 0px;
+            padding: 0px;
+            margin-right: 80px;
+            animation: slideShow 10s infinite;
+            object-fit: cover;
+            margin-left: 0px;
+            
+        }
+
+        @keyframes slideShow {
+    0%, 100% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    45% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+
+    70% {
+        transform: translateX(-200%);
+    }
+
+    75% {
+        transform: translateX(-300%);
+    }
+
+    95% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+.ii{
+    top: 10%;
+}
+
